@@ -1,1 +1,65 @@
-app
+{
+  "Version": "1.0.1",
+  "ReleaseNotes": "",
+  "UrlUpdate": "https://raw.githubusercontent.com/serginhovsc/choquepro4g/main/Atualizarappl",
+  "Sms": "https://raw.githubusercontent.com/serginhovsc/choquepro4g/main/sms",
+  "EmailFeedback": "contato@sergiohost.com.br",
+  "UrlContato": "",
+  "UrlTermos": "https://grupoapps.com.br/politicas.html",
+  "CheckUser": "true",
+  "Udp": [
+    {
+      "Porta": "7300"
+    },
+    {
+      "Porta": "7295"
+    },
+    {
+      "Porta": "7296"
+    },
+    {
+      "Porta": "7297"
+    },
+    {
+      "Porta": "7298"
+    },
+    {
+      "Porta": "7299"
+    }
+  ],
+  "Servers": [
+    {
+      "Name": "BR01",
+      "TYPE": "Premium",
+      "FLAG": "br.png",
+      "ServerIP": "superc.brt1.ml",
+      "CheckUser": "http://152.70.216.94:5000",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "",
+      "PASS": ""
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "VIVO Novo 1",
+      "FLAG": "vivo",
+      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "[app_host]",
+      "TlsIP": "104.24.10.16",
+      "ProxyIP": "",
+      "ProxyPort": "80",
+      "Info": "Tlsws"
+    },
+        {
+      "Name": "TIM [SSL 2]",
+      "FLAG": "tim",
+      "Payload": "GET wss://static.r4you.co HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
+      "SNI": "static.r4you.co",
+      "TlsIP": "104.26.5.175",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    }
+  ]
+}
